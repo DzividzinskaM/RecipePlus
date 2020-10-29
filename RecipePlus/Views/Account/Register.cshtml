@@ -4,7 +4,7 @@
     ViewData["Title"] = "Register";
 }
 
-  
+
 <h1 class="autorization__title">REGISTER FOR RecipePlus</h1>
 
 
@@ -31,7 +31,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Password" class="control-label">Password</label>
-                <input asp-for="Password" type="password" name ="Password" class="form-control" />
+                <input asp-for="Password" type="password" name="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -40,7 +40,7 @@
                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
             <div class="form-group form-btn">
-                <input type="submit" value="Register" class="btn btn-outline-secondary btn-authentiction justify-content-lg-center"  />
+                <input type="submit" value="Register" class="btn btn-outline-secondary btn-authentiction justify-content-lg-center" />
             </div>
         </form>
         <div class="to_login" style="text-align: center">
@@ -49,4 +49,8 @@
         </div>
     </div>
 </div>
+
+@section NavbarButtons {
+    
+}
 
