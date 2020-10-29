@@ -1,0 +1,23 @@
+﻿.autorization__title{
+    text-align: center;
+}
+
+.authentiction-form {
+    padding: 40px;
+}
+.authentiction-form__context {
+    padding: 30px;
+}
+
+.form-btn {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.btn-authentiction {
+    width: 80%;
+}
+
+.to_login {
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+﻿@model RecipePlus.ViewModels.LoginModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1 class="autorization__title">LOGIN TO RecipePlus</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6 authentiction-form">
+        <form asp-action="Login" method="post" class="authentiction-form__context border rounded-lg">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" name="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label">Password</label>
+                <input asp-for="Password" name="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group form-btn">
+                <input type="submit" value="Login" class="btn btn-outline-secondary btn-authentiction justify-content-lg-center" />
+        </form>
+    </div>
+    <div style="text-align: center">
+        New to RecipePlus?
+        <a href="https://localhost:44371/Account/Register">Create an account!</a>
+    </div>
+</div>
+
+@section NavbarButtons {
+    
+}
+
+

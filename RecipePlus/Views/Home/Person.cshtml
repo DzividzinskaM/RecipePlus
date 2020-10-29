@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Personal account";
+}
+
+<h1>Account</h1>
+<div>
+    Hello! @ViewBag.User
+</div>
+
+@section NavbarButtons{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" href="@Url.Action("Logout", "Account")">Logout</a>
+    </li>
+}
