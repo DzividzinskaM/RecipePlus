@@ -36,7 +36,7 @@ namespace RecipePlus.Controllers
                 {
                     await Authenticate(model.Email);
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Person", "Home");
                 }
                 ModelState.AddModelError("", "Login or password isn't correct");
             }
@@ -63,14 +63,14 @@ namespace RecipePlus.Controllers
 
                     await Authenticate(model.Email);
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Person", "Home");
                 }
-                else
-                {
-                    ModelState.AddModelError("", "Login or password isn't correct");
-                }
-            }    
-            
+            }
+            else
+            {
+                ModelState.AddModelError("", "Login or password isn't correct");
+            }
+
             return View(model);
         }
 
@@ -90,7 +90,7 @@ namespace RecipePlus.Controllers
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Login", "Account");
+            return RedirectToAction("Start", "Home");
         }
     }
 }

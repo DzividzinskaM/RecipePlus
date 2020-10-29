@@ -19,17 +19,17 @@ namespace RecipePlus.Controllers
             _logger = logger;
         }
 
-        /* [Authorize]
-         public IActionResult Index()
-         {
-             return Content(User.Identity.Name);
-         }*/
-
+        public IActionResult Start()
+        {
+   
+            return View();
+        }
 
         [Authorize]
-        public IActionResult Index()
+        public IActionResult Person()
         {
-            return Content(User.Identity.Name);
+            ViewBag.User = User.Identity.Name;
+            return View();
         }
 
         public IActionResult Privacy()
