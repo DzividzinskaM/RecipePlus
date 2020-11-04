@@ -1,0 +1,31 @@
+﻿@model IEnumerable<RecipePlus.Models.Recipe>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+
+<div class="d-flex justify-content-between recipe-table">
+    <div class="recipes">
+        <table class="table container d-flex flex-row align-items-space-between">
+
+            <tbody class="border">
+            </tbody>
+
+        </table>
+    </div>
+    <div class="recipe-detail standart-recipe-detail">
+
+    </div>
+</div>
+
+<script type="text/javascript" src="~/js/recipes.js"></script>
+
+@section NavbarButtons {
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" href="@Url.Action("Login", "Account")">Login</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" href="@Url.Action("Register", "Account")">Register</a>
+    </li>
+}
