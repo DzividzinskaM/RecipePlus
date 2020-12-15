@@ -1,0 +1,66 @@
+﻿.autorization__title{
+    text-align: center;
+}
+
+
+
+.authentiction-form__context {
+    
+}
+
+.form-btn {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.btn-authentiction {
+    width: 80%;
+}
+
+.to_login {
+    text-align: center;
+}
+.recipes-table{
+    padding-left: 0px;
+}
+
+.recipes {
+    width: 100%;
+    margin-top: 70px;
+}
+
+table {
+    width: 100%
+}
+
+.recipe_table__cell {
+    width: 500px;
+    text-align: center;
+}
+
+
+.recipe-detail {
+    padding-left: 80px;
+    width: 100%;
+}
+
+.standart-recipe-detail{
+    margin-top: 70px;
+}
+
+form {
+    padding: 20px;
+}
+
+
+.nav-btns{
+    width:45%;
+}
+
+.nav-btns__item {
+    width: 50%;
+}
+
+.container-info {
+    padding-top: 20px;
+}
